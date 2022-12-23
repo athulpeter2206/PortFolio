@@ -1,0 +1,44 @@
+.topNav{
+    /* background-color: rgb(151, 144, 144); */
+    opacity: 0.65;
+    width: auto;
+    height: 1.4cm;
+    text-align: right;
+    margin-top: 0.5cm;
+    float: ;
+}
+.active{
+    padding-right: 0.5cm;
+    text-decoration:antiquewhite;
+    color: red;
+    font-size: medium;
+    
+}
+
+.introPanel{
+    font-size: xxx-large;
+    color: white;
+    /* text-align: center; */
+    padding-top: 4cm;
+    margin-left: 1cm;
+}
+.aboutClass{
+    font-size: large;
+    color: rgb(208, 199, 199);
+    text-align: left;
+    padding-top: 0cm;
+    margin-left: 1cm;
+}
+.aboutPanel{
+    background-color: rgb(38, 37, 37);
+    opacity: 0.55;
+    width: 42cm;
+    height: 5.5cm;
+    text-align: right;
+    padding: 0.8cm;
+}
+.homePanel{
+    background-color: rgb(120, 116, 116);
+    opacity: 0.65;
+    width: 40cm; 
+}
