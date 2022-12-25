@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <head> 
-    <title> Personal Portfolio </title>
+    <title>Portfolio </title>
     <link rel="stylesheet" href="CSS/portfolioCSSFile.css">
+    <link rel="icon" href="Images/Logo.png" type = "image/x-icon">
 </head>
 
 <!-- <body style="font-family: cursive; 
@@ -10,11 +11,10 @@ background-image: url(WebPageCover.gif); background-size: 410mm;"> -->
 <body style="font-family: cursive;background-color: black;"id="home">
 
 <div class="topNav">
-    <img src="Images/Logo.png" width="50px" height="50px" style="float: left;padding-left: 0.2cm;" href="">
+    <img src="Images/Logo.png" width="50px" height="51px" style="float: left;padding-left: 0.2cm;" href="">
     <a class="active" href="#home">Home</a>
-    <a class="active" href="#aboutSec">About</a>
-    <a class="active" href="#WorkDetals">Work Experiance</a>
-    <a class="active" href="#education">Education Details</a>
+    <a class="active" href="#workexp">Work Experiance</a>
+    <a class="active" href="#educationDet">Education Details</a>
     <a class="active" href="#contactdetails">Contact Details</a>
 </div>
 <div>
@@ -32,20 +32,40 @@ background-image: url(WebPageCover.gif); background-size: 410mm;"> -->
         </td>
         <td style="text-align: left;width: 40%;">
             <div>
-                 <img src="Images/ReadyPlayerMe-Avatar3.png" style="width: 95%;padding-top: 4cm;">   
+                 <img src="Images/ReadyPlayerMe-Avatar3.png" alt="AvatarImg" style="width: 100%;padding-top: 4cm;">   
             </div>
         </td>
     
     </table>
-</div>
-    
-<div class="aboutPanel" id="aboutSec">
-    <h3 style="text-align: left; color: aliceblue;padding-left: 0.5cm;">About Me</h3>
+</div>   
+<div class="expPanel" id="workexp">
+    <h3 style="text-align: left; color: aliceblue;padding-left: 0.5cm;margin-top: 1cm;">Work Experiance</h3>
     <p style="text-align: left; color: aliceblue;padding-left: 0.5cm;">I am an Automation Test Engineer who perfromed the automation test activities for UI,API and Batch by making use of selenium,Groovy.
     <br><br>Worked in a Project which implemented DevOps and used script Quality assurance methods like Jenkins,SonarQube
     <br><br>Got Opportunity to collaborate with Backend developers, Frond-end developers, Bussiness Analysts and UX designers to test new features in an Agile environment.
     <br><br> Participated in Code Reviews and Ensured Coding standards are followed </p>
-</div>        
+</div>
+<br><br><br><br><br><br><br>
+
+<div class="EduPanel" id="educationDet">
+    <h3 style="text-align: left; color: aliceblue;padding-left: 0.5cm;margin-top: 1cm;">Education Details</h3>
+    <ul>
+        <li class="eduListClass">Graduation
+            <br> <p style="padding-left: 1cm;"> Bsc.Computer.Science -- St Albert&apos;s College Autonomous, Ernakulam -- 2016-2019</p>
+        </li>
+        <li class="eduListClass">Higher Secondary
+            <br> <p style="padding-left: 1cm;"> Computer Science -- Our Lady of Mercy Higher Secondary School, Allapuzha -- 2014-2016</p>
+        </li>
+        <li class="eduListClass">Secondary
+            <br> <p style="padding-left: 1cm;">  Our Lady of Mercy School, Allapuzha -- 2016</p>
+        </li>
+        <li class="eduListClass">Other Certification
+            <br> <p style="padding-left: 1cm;">  Networking and Storage -- National Skills Development Corporation -- 2018</p>
+            <br> <p style="padding-left: 1cm;">  Process: Agile Way of Working -- TCS -- 2019</p>
+        </li>            
+    </ul>
+</div>
+
 </body>
 
 </html>

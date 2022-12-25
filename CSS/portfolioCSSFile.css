@@ -1,18 +1,24 @@
 .topNav{
-    /* background-color: rgb(151, 144, 144); */
-    opacity: 0.65;
-    width: auto;
+    background-color: rgb(97, 96, 94);
+    opacity: 0.45;
+    width: 40cm;
     height: 1.4cm;
     text-align: right;
-    margin-top: 0.5cm;
-    float: ;
+    /* margin-top: 0.5cm; */
+    /* float: ; */
+    position: fixed;
 }
 .active{
     padding-right: 0.5cm;
     text-decoration:antiquewhite;
     color: red;
     font-size: medium;
-    
+    cursor: pointer; 
+   
+}
+
+.active:hover {
+    color: #ccc;
 }
 
 .introPanel{
@@ -29,11 +35,11 @@
     padding-top: 0cm;
     margin-left: 1cm;
 }
-.aboutPanel{
+.expPanel{
     background-color: rgb(38, 37, 37);
     opacity: 0.55;
     width: 42cm;
-    height: 5.5cm;
+    height: 8cm;
     text-align: right;
     padding: 0.8cm;
 }
@@ -42,3 +48,18 @@
     opacity: 0.65;
     width: 40cm; 
 }
+.EduPanel{
+    background-color: rgb(38, 37, 37);
+    opacity: 0.55;
+    width: 42cm;
+    height: 15cm;
+    text-align: right;
+    padding: 0.8cm;
+    
+}
+.eduListClass{
+    text-align: left;
+    padding-top: 0.5cm;
+    color: rgb(208, 199, 199);
+}
+
