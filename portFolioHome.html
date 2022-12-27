@@ -6,15 +6,15 @@
 </head>
 
 <!-- <body style="font-family: cursive; 
-background-image: url(WebPageCover.gif); background-size: 410mm;"> -->
+background-image: url(Images/Cover.gif); background-size: 400mm;"> -->
 
 <body style="font-family: cursive;background-color: black;"id="home">
 
 <div class="topNav">
     <img src="Images/Logo.png" width="50px" height="51px" style="float: left;padding-left: 0.2cm;" href="">
-    <a class="active" href="#home">Home</a>
-    <a class="active" href="#workexp">Work Experiance</a>
-    <a class="active" href="#educationDet">Education Details</a>
+    <a  class="active" href="#home">Home</a>
+    <a class="active" style="background-color: rgba(240, 248, 255, 0);border: 0;" onclick="show('operation1')"> Experiance</a>
+    <button class="active" style="background-color: rgba(240, 248, 255, 0);border: 0;" onclick="show('operation2')">Education Details</button>
     <a class="active" href="#contactdetails">Contact Details</a>
 </div>
 <div>
@@ -37,35 +37,51 @@ background-image: url(WebPageCover.gif); background-size: 410mm;"> -->
         </td>
     
     </table>
-</div>   
-<div class="expPanel" id="workexp">
-    <h3 style="text-align: left; color: aliceblue;padding-left: 0.5cm;margin-top: 1cm;">Work Experiance</h3>
-    <p style="text-align: left; color: aliceblue;padding-left: 0.5cm;">I am an Automation Test Engineer who perfromed the automation test activities for UI,API and Batch by making use of selenium,Groovy.
-    <br><br>Worked in a Project which implemented DevOps and used script Quality assurance methods like Jenkins,SonarQube
-    <br><br>Got Opportunity to collaborate with Backend developers, Frond-end developers, Bussiness Analysts and UX designers to test new features in an Agile environment.
-    <br><br> Participated in Code Reviews and Ensured Coding standards are followed </p>
 </div>
-<br><br><br><br><br><br><br>
+<div id="mainHomeDiv" class="EduPanel">
 
-<div class="EduPanel" id="educationDet">
-    <h3 style="text-align: left; color: aliceblue;padding-left: 0.5cm;margin-top: 1cm;">Education Details</h3>
-    <ul>
-        <li class="eduListClass">Graduation
-            <br> <p style="padding-left: 1cm;"> Bsc.Computer.Science -- St Albert&apos;s College Autonomous, Ernakulam -- 2016-2019</p>
-        </li>
-        <li class="eduListClass">Higher Secondary
-            <br> <p style="padding-left: 1cm;"> Computer Science -- Our Lady of Mercy Higher Secondary School, Allapuzha -- 2014-2016</p>
-        </li>
-        <li class="eduListClass">Secondary
-            <br> <p style="padding-left: 1cm;">  Our Lady of Mercy School, Allapuzha -- 2016</p>
-        </li>
-        <li class="eduListClass">Other Certification
-            <br> <p style="padding-left: 1cm;">  Networking and Storage -- National Skills Development Corporation -- 2018</p>
-            <br> <p style="padding-left: 1cm;">  Process: Agile Way of Working -- TCS -- 2019</p>
-        </li>            
-    </ul>
 </div>
+<!-- <div > -->
+    <div  id="operation1" style="display: none;" class="expPanel">
+        <div class="ExpClass">
+            <img src="Images/user-experience.png" width="50px" height="51px" style="float: left;padding: 0.5cm;margin-top: 0cm;"><br>
+            <h3 style="text-align: left; color: rgb(253, 253, 253);padding-left: 0.5cm;margin-top: 0.1cm;">Work Experiance</h3>
+        </div>
+        <br>
+        <p style="text-align: left; color: aliceblue;padding-left: 0.5cm;">I am an Automation Test Engineer who perfromed the automation test activities for UI,API and Batch by making use of selenium,Groovy.
+        <br><br>Worked in a Project which implemented DevOps and used script Quality assurance methods like Jenkins,SonarQube
+        <br><br>Got Opportunity to collaborate with Backend developers, Frond-end developers, Bussiness Analysts and UX designers to test new features in an Agile environment.
+        <br><br> Participated in Code Reviews and Ensured Coding standards are followed </p>
+    </div>
+<!-- </div> -->
 
+<!-- <br><br><br><br><br><br><br> -->
+
+
+    <div  id="operation2" style="display: none;" class="EduPanel">
+        <h3 style="text-align: left; color: aliceblue;padding-left: 0.5cm;margin-top: 1cm;">Education Details</h3>
+        <ul>
+            <li class="eduListClass">Graduation
+                <br> <p style="padding-left: 1cm;"> Bsc.Computer.Science -- St Albert&apos;s College Autonomous, Ernakulam -- 2016-2019</p>
+            </li>
+            <li class="eduListClass">Higher Secondary
+                <br> <p style="padding-left: 1cm;"> Computer Science -- Our Lady of Mercy Higher Secondary School, Allapuzha -- 2014-2016</p>
+            </li>
+            <li class="eduListClass">Secondary
+                <br> <p style="padding-left: 1cm;">  Our Lady of Mercy School, Allapuzha -- 2016</p>
+            </li>
+            <li class="eduListClass">Other Certification
+                <br> <p style="padding-left: 1cm;">  Networking and Storage -- National Skills Development Corporation -- 2018</p>
+                <br> <p style="padding-left: 1cm;">  Process: Agile Way of Working -- TCS -- 2019</p>
+            </li>            
+        </ul>
+    </div>
+<script>
+    function show(param_div_id){
+        document.getElementById('mainHomeDiv').innerHTML = document.getElementById(param_div_id).innerHTML;
+        const scrollingElement = (document.scrollingElement || document.body);
+        scrollingElement.scrollTop = scrollingElement.scrollHeight;     
+    }    
+</script>
 </body>
-
 </html>

@@ -1,7 +1,7 @@
 .topNav{
     background-color: rgb(97, 96, 94);
     opacity: 0.45;
-    width: 40cm;
+    width: 40.5cm;
     height: 1.4cm;
     text-align: right;
     /* margin-top: 0.5cm; */
@@ -61,5 +61,13 @@
     text-align: left;
     padding-top: 0.5cm;
     color: rgb(208, 199, 199);
+}
+.ExpClass{
+    background-color: rgb(64, 62, 62);
+    opacity: 0.75;
+    width: 42cm;
+    height: 2cm;
+    text-align: center;
+    margin-top: 0.5cm;
 }
 
