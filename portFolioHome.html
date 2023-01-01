@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <head> 
     <title>Portfolio </title>
-    <link rel="stylesheet" href="CSS/portfolioCSSFile.css">
+    <link rel="stylesheet" href="CSS/DemoPortFolioCSSFile.css">
     <link rel="icon" href="Images/Logo.png" type = "image/x-icon">
 </head>
-
 <!-- <body style="font-family: cursive; 
-background-image: url(Images/Cover.gif); background-size: 400mm;"> -->
+background-image: url(Images/WebPageCover.gif); background-size: 420mm;"> -->
 
 <body style="font-family: cursive;background-color: black;"id="home">
 
 <div class="topNav">
-    <img src="Images/Logo.png" width="50px" height="51px" style="float: left;padding-left: 0.2cm;" href="">
-    <a  class="active" href="#home">Home</a>
+    <a href="javascript:history.go(0)"><img src="Images/Logo.png" width="50px" height="51px" style="float: left;padding-left: 0.2cm;"></a>
+    <a  class="active" href="javascript:history.go(0)">Home</a>
     <a class="active" style="background-color: rgba(240, 248, 255, 0);border: 0;" onclick="show('operation1')"> Experiance</a>
     <button class="active" style="background-color: rgba(240, 248, 255, 0);border: 0;" onclick="show('operation2')">Education Details</button>
-    <a class="active" href="#contactdetails">Contact Details</a>
+    <a class="active" onclick="show('operation3')" href="#contactdetails">Contact Details</a>
 </div>
-<div>
+<div id="MainDiv">
     <table>
         <td style="text-align: left;width: 60%;">
             <div>
@@ -26,7 +25,7 @@ background-image: url(Images/Cover.gif); background-size: 400mm;"> -->
                 </p>    
                 <p class="aboutClass">I AM AN AUTOMATION TEST ENGINEER</p>
                 <p class="aboutClass">Over the last 3 Years I've had the pleasure of working with some great team,
-                    <br>Working side by side with various developers to automate and test new apps to validate the requirements.</p>
+                    <br>Working side by side with various developers to automate and test new scenarios to validate the requirements.</p>
                 
             </div>
         </td>
@@ -38,47 +37,146 @@ background-image: url(Images/Cover.gif); background-size: 400mm;"> -->
     
     </table>
 </div>
-<div id="mainHomeDiv" class="EduPanel">
-
-</div>
-<!-- <div > -->
-    <div  id="operation1" style="display: none;" class="expPanel">
-        <div class="ExpClass">
-            <img src="Images/user-experience.png" width="50px" height="51px" style="float: left;padding: 0.5cm;margin-top: 0cm;"><br>
-            <h3 style="text-align: left; color: rgb(253, 253, 253);padding-left: 0.5cm;margin-top: 0.1cm;">Work Experiance</h3>
+<div id="operation1" style="display: none;">
+    <table>
+        <td style="text-align: left;width: 60%;">
+            <div class="ExpClass">
+                <img src="Images/user-experience.png" width="50px" height="52px" style="float: left;padding: 0.4cm;margin-top: 0cm;"><br>
+                <h3 style="text-align: left; color: rgb(253, 253, 253);padding-left: 0.5cm;margin-top: 0.1cm;">Work Experiance</h3>
         </div>
         <br>
-        <p style="text-align: left; color: aliceblue;padding-left: 0.5cm;">I am an Automation Test Engineer who perfromed the automation test activities for UI,API and Batch by making use of selenium,Groovy.
-        <br><br>Worked in a Project which implemented DevOps and used script Quality assurance methods like Jenkins,SonarQube
-        <br><br>Got Opportunity to collaborate with Backend developers, Frond-end developers, Bussiness Analysts and UX designers to test new features in an Agile environment.
-        <br><br> Participated in Code Reviews and Ensured Coding standards are followed </p>
-    </div>
-<!-- </div> -->
+        <div class="ExperianceDetails">
+                <br>
+                <p style="text-align: left; color: aliceblue;padding-left: 0.5cm;">I am an Automation Test Engineer who perfromed the automation test activities for UI,API and Batch by making use of selenium,Groovy.
+                    <br><br>Worked in a Project which implemented DevOps and used script Quality assurance methods like Jenkins,SonarQube
+                    <br><br>Got Opportunity to collaborate with Backend developers, Frond-end developers, Bussiness Analysts and UX designers to test new features in an Agile environment.
+                    <br><br> Participated in Code Reviews and Ensured Coding standards are followed </p>
+                    <br>
+                    <div class="expLogoPanel">
+                        <table style="padding-top: 0.15cm;">
+                            <td style="width: 3cm;text-align: left;padding-left: 0.5cm;">
+                                <a target="_blank" href="https://www.selenium.dev/">
+                                    <img src="Images/SeleniumLogo.png" alt="SeleniumImg" style="width: 2cm;height: 2cm;border-radius: 10px;">
+                                </a> 
+                            </td>
+                            <td style="width: 3cm;text-align: left;">
+                                <a  target="_blank" href="https://groovy-lang.org/">
+                                    <img src="Images/GroovyLogo.png" alt="GroovyImg" style="width: 2cm;height: 2cm;border-radius: 10px;">
+                                </a> 
+                            </td>
+                            <td style="width: 3cm;text-align: left;">
+                                <a target="_blank" href="https://www.jenkins.io/">
+                                    <img src="Images/JenkinsLogo.jpg" alt="JenkinsImg" style="width: 2cm;height: 2cm;border-radius: 10px;">
+                                </a>   
+                            </td>
+                            <td style="width: 3cm;text-align: left;">
+                                <a target="_blank" href="https://www.java.com/en/">
+                                    <img src="Images/JavaLogo.jpg" alt="JavaImg" style="width: 2cm;height: 2cm;border-radius: 10px;"> 
+                                </a> 
+                            </td>
+                            <td style="width: 3cm;text-align: left;">
+                                <a target="_blank" href="https://www.sonarsource.com/products/sonarqube/">
+                                    <img src="Images/SonarQubeLogo.png" alt="JavaImg" style="width: 2cm;height: 2cm;border-radius: 10px;"> 
+                                </a> 
+                            </td>
+                        </table>
+                    </div>
+        </div>
+        </td>
+        <td style="text-align: left;width: 40%;">
+            <div>
+                 <img src="Images/ReadyPlayerMe-Avatar3.png" alt="AvatarImg" style="width: 100%;padding-top: 4cm;">   
+            </div>
+        </td>
+    
+    </table>
+</div>
+<div id="operation2" style="display: none;" >
+    <table>
+        <td style="text-align: left;width: 60%;">
+            <div class="EduHeadingPanel">
+                <img src="Images/EduLogo.png" width="50px" height="52px" style="float: left;padding: 0.4cm;margin-top: 0cm;"><br>
+                <h3 style="text-align: left; color: aliceblue;padding-left: 0.5cm;margin-top: 0.1cm;">Education Details</h3>
+            </div>
+            <br>
+            <div class="EduDetailsPanel">
+                <ul>
+                    <li class="eduListClass">Graduation
+                        <br> <p style="padding-left: 1cm;"> Bsc.Computer.Science -- St Albert&apos;s College Autonomous, Ernakulam -- 2016-2019</p>
+                    </li>
+                    <li class="eduListClass">Higher Secondary
+                        <br> <p style="padding-left: 1cm;"> Computer Science -- Our Lady of Mercy Higher Secondary School, Allapuzha -- 2014-2016</p>
+                    </li>
+                    <li class="eduListClass">Secondary
+                        <br> <p style="padding-left: 1cm;">  Our Lady of Mercy School, Allapuzha -- 2016</p>
+                    </li>
+                    <li class="eduListClass">Other Certification
+                        <br> <p style="padding-left: 1cm;">  Networking and Storage -- National Skills Development Corporation -- 2018</p>
+                        <br> <p style="padding-left: 1cm;">  Process: Agile Way of Working -- TCS -- 2019</p>
+                    </li>            
+                </ul>
+            </div>
+        </td>
+        <td style="text-align: left;width: 40%;">
+            <div>
+                 <img src="Images/ReadyPlayerMe-Avatar3.png" alt="AvatarImg" style="width: 100%;padding-top: 4cm;">   
+            </div>
+        </td>
+    </table>
+</div>
 
-<!-- <br><br><br><br><br><br><br> -->
+<div id="operation3" style="display: none;" >
+    <table>
+        <td style="text-align: left;width: 60%;">
+            <p class="introPanel"> HI! I'M
+                <span style="color: red; text-align: center;font-size: xxx-large;"> ATHUL</span>
+            </p> 
+            <div  class="ContactPanel">
+   
+                <h3 style="margin: 0.5cm;font-size: x-large;padding-top: 0.5cm;">Contact Details</h3>
+                <div>
+                    <table>
+                        <tr>
+                            <td style="width: 0.5cm;text-align: left;">
+                                <img src="Images/MobileLogo.png" alt="MobileImg" style="width: 1.5cm;height: 1.2cm;border-radius: 5px;">
+                            </td>
+                            <td style="width: 14.5cm;">
+                                <p class="contactDetails">: +91 9400600725</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 0.5cm;text-align: left;">
+                                <img src="Images/MailLogo.png" alt="MailImg" style="width: 1.5cm;height: 1.2cm;border-radius: 5px;">
+                            </td>
+                            <td style="width: 14.5cm;">
+                                <p class="contactDetails">: athulpeter2206@gmail.com</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 0.5cm;text-align: left;">
+                                <img src="Images/LinkedInLogo.png" alt="MailImg" style="width: 1.2cm;height: 1.2cm;border-radius: 5px;margin-left: 0.2cm;">
+                            </td>
+                            <td style="width: 14.5cm;">
+                                <a target="_blank" href="https://www.linkedin.com/in/athul-peter-729221172/"><p class="contactDetails">: athul-peter-729221172</p></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+        </td>
+        <td style="text-align: left;width: 40%;">
+            <div>
+                 <img src="Images/ReadyPlayerMe-Avatar3.png" alt="AvatarImg" style="width: 100%;padding-top: 4cm;">   
+            </div>
+        </td>
+    
+    </table>
+</div>
 
-
-    <div  id="operation2" style="display: none;" class="EduPanel">
-        <h3 style="text-align: left; color: aliceblue;padding-left: 0.5cm;margin-top: 1cm;">Education Details</h3>
-        <ul>
-            <li class="eduListClass">Graduation
-                <br> <p style="padding-left: 1cm;"> Bsc.Computer.Science -- St Albert&apos;s College Autonomous, Ernakulam -- 2016-2019</p>
-            </li>
-            <li class="eduListClass">Higher Secondary
-                <br> <p style="padding-left: 1cm;"> Computer Science -- Our Lady of Mercy Higher Secondary School, Allapuzha -- 2014-2016</p>
-            </li>
-            <li class="eduListClass">Secondary
-                <br> <p style="padding-left: 1cm;">  Our Lady of Mercy School, Allapuzha -- 2016</p>
-            </li>
-            <li class="eduListClass">Other Certification
-                <br> <p style="padding-left: 1cm;">  Networking and Storage -- National Skills Development Corporation -- 2018</p>
-                <br> <p style="padding-left: 1cm;">  Process: Agile Way of Working -- TCS -- 2019</p>
-            </li>            
-        </ul>
-    </div>
 <script>
     function show(param_div_id){
-        document.getElementById('mainHomeDiv').innerHTML = document.getElementById(param_div_id).innerHTML;
+        document.getElementById('MainDiv').innerHTML = document.getElementById(param_div_id).innerHTML;
         const scrollingElement = (document.scrollingElement || document.body);
         scrollingElement.scrollTop = scrollingElement.scrollHeight;     
     }    
