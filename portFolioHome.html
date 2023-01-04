@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head> 
     <title>Portfolio </title>
-    <link rel="stylesheet" href="CSS/DemoPortFolioCSSFile.css">
+    <link rel="stylesheet" href="CSS/portfolioCSSFile.css">
     <link rel="icon" href="Images/Logo.png" type = "image/x-icon">
 </head>
 <!-- <body style="font-family: cursive; 
@@ -10,7 +10,7 @@ background-image: url(Images/WebPageCover.gif); background-size: 420mm;"> -->
 <body style="font-family: cursive;background-color: black;"id="home">
 
 <div class="topNav">
-    <a href="javascript:history.go(0)"><img src="Images/Logo.png" width="50px" height="51px" style="float: left;padding-left: 0.2cm;"></a>
+    <a href="javascript:history.go(0)"><img src="Images/Logo.png" width="50px" height="51px" style="float: left;padding-left: 0cm;"></a>
     <a  class="active" href="javascript:history.go(0)">Home</a>
     <a class="active" style="background-color: rgba(240, 248, 255, 0);border: 0;" onclick="show('operation1')"> Experiance</a>
     <button class="active" style="background-color: rgba(240, 248, 255, 0);border: 0;" onclick="show('operation2')">Education Details</button>
@@ -20,8 +20,12 @@ background-image: url(Images/WebPageCover.gif); background-size: 420mm;"> -->
     <table>
         <td style="text-align: left;width: 60%;">
             <div>
-                <p class="introPanel"> HI! I'M
-                    <span style="color: red; text-align: center;font-size: xxx-large;"> ATHUL</span>
+                <p class="introPanel" style="background-image: url(Images/NameBackGround1.gif);
+                -webkit-background-clip:text;
+                background-clip: text;
+                color: transparent;
+                background-position: center;"> HI! I'M
+                    <span style="text-align: center; font-size: 90px;color: red;"> ATHUL</span>
                 </p>    
                 <p class="aboutClass">I AM AN AUTOMATION TEST ENGINEER</p>
                 <p class="aboutClass">Over the last 3 Years I've had the pleasure of working with some great team,
@@ -31,7 +35,7 @@ background-image: url(Images/WebPageCover.gif); background-size: 420mm;"> -->
         </td>
         <td style="text-align: left;width: 40%;">
             <div>
-                 <img src="Images/ReadyPlayerMe-Avatar3.png" alt="AvatarImg" style="width: 100%;padding-top: 4cm;">   
+                 <img src="Images/ReadyPlayerMe-Avatar4.png" alt="AvatarImg" style="width: 100%;padding-top: 4cm;">   
             </div>
         </td>
     
@@ -43,7 +47,7 @@ background-image: url(Images/WebPageCover.gif); background-size: 420mm;"> -->
             <div class="ExpClass">
                 <img src="Images/user-experience.png" width="50px" height="52px" style="float: left;padding: 0.4cm;margin-top: 0cm;"><br>
                 <h3 style="text-align: left; color: rgb(253, 253, 253);padding-left: 0.5cm;margin-top: 0.1cm;">Work Experiance</h3>
-        </div>
+            </div>
         <br>
         <div class="ExperianceDetails">
                 <br>
@@ -112,7 +116,7 @@ background-image: url(Images/WebPageCover.gif); background-size: 420mm;"> -->
                     </li>
                     <li class="eduListClass">Other Certification
                         <br> <p style="padding-left: 1cm;">  Networking and Storage -- National Skills Development Corporation -- 2018</p>
-                        <br> <p style="padding-left: 1cm;">  Process: Agile Way of Working -- TCS -- 2019</p>
+                     <p style="padding-left: 1cm;">  Process: Agile Way of Working -- TCS -- 2019</p>
                     </li>            
                 </ul>
             </div>
@@ -128,13 +132,15 @@ background-image: url(Images/WebPageCover.gif); background-size: 420mm;"> -->
 <div id="operation3" style="display: none;" >
     <table>
         <td style="text-align: left;width: 60%;">
-            <p class="introPanel"> HI! I'M
-                <span style="color: red; text-align: center;font-size: xxx-large;"> ATHUL</span>
-            </p> 
-            <div  class="ContactPanel">
-   
+            <div class="EduHeadingPanel" style="margin-left: 1.5cm;">
+                <img src="Images/ContactLogo.png" width="52px" height="50px" style="float: left;padding: 0.4cm;margin-top: 0cm;">
                 <h3 style="margin: 0.5cm;font-size: x-large;padding-top: 0.5cm;">Contact Details</h3>
+            </div>
+            <br>
+            <div  class="ContactPanel">
+                
                 <div>
+                    <br><br>
                     <table>
                         <tr>
                             <td style="width: 0.5cm;text-align: left;">
@@ -184,9 +190,7 @@ background-image: url(Images/WebPageCover.gif); background-size: 420mm;"> -->
 
 <script>
     function show(param_div_id){
-        document.getElementById('MainDiv').innerHTML = document.getElementById(param_div_id).innerHTML;
-        const scrollingElement = (document.scrollingElement || document.body);
-        scrollingElement.scrollTop = scrollingElement.scrollHeight;     
+        document.getElementById('MainDiv').innerHTML = document.getElementById(param_div_id).innerHTML;    
     }    
 </script>
 </body>

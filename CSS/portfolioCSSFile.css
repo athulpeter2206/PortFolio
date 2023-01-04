@@ -16,44 +16,22 @@
 }
 
 .active:hover {
-    color: #ccc;
+    color: white;
 }
 
 .introPanel{
-    font-size: xxx-large;
+    font-size: 60px;
     color: white;
     /* text-align: center; */
     padding-top: 4cm;
     margin-left: 1cm;
 }
 .aboutClass{
-    font-size: large;
+    font-size: 20px;
     color: rgb(208, 199, 199);
     text-align: left;
     padding-top: 0cm;
     margin-left: 1cm;
-}
-.expPanel{
-    background-color: rgb(38, 37, 37);
-    opacity: 0.45;
-    width: 42cm;
-    height: 8cm;
-    text-align: right;
-    padding: 0.8cm;
-}
-.homePanel{
-    background-color: rgb(120, 116, 116);
-    opacity: 0.65;
-    width: 40cm; 
-}
-.EduPanel{
-    background-color: rgb(38, 37, 37);
-    opacity: 0.55;
-    width: 42cm;
-    height: 15cm;
-    text-align: right;
-    padding: 0.8cm;
-    
 }
 .eduListClass{
     text-align: left;
@@ -61,7 +39,7 @@
     color: rgb(208, 199, 199);
 }
 .ExpClass{
-    background-color: rgb(86, 83, 83);
+    background-color: rgb(83, 80, 80);
     /* opacity: 0.75; */
     width: 8cm;
     height: 2cm;
@@ -69,9 +47,10 @@
     margin-top: 1cm;
     border-radius: 15px;
     margin-left: 0.5cm;
+
 }
 .ExperianceDetails{
-    background-color: rgb(86, 83, 83);
+    background-color: rgb(83, 80, 80);
     /* opacity: 0.75; */
     width: 23cm;
     height: 11cm;
