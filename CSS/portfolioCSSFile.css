@@ -1,7 +1,7 @@
 .topNav{
     background-color: rgb(97, 96, 94);
     opacity: 0.45;
-    width: 40.5cm;
+    width: 42cm;
     height: 1.4cm;
     text-align: right;
     position: fixed;
@@ -44,7 +44,7 @@
     width: 8cm;
     height: 2cm;
     text-align: center;
-    margin-top: 1cm;
+    margin-top: 4cm;
     border-radius: 15px;
     margin-left: 0.5cm;
 
@@ -72,7 +72,7 @@
     height: 2cm;
     border-radius: 15px;
     margin-left: 0.5cm;
-    margin-top: 1cm;
+    margin-top: 3.5cm;
 }
 .EduDetailsPanel{
     background-color: rgb(86, 83, 83);
@@ -87,7 +87,7 @@
     width: 10cm;
     height: 10cm;
     margin-left: 1.5cm;
-    border-radius: 15px;
+    border-radius: 15px 15px 150px 150px;
 }
 .contactDetails{
         font-size: large;
@@ -95,4 +95,29 @@
         text-align: left;
         padding-top: 0cm;
 }
+.ContactHeadingPanel{
+    background-color: rgb(86, 83, 83);
+    width: 10cm;
+    height: 2cm;
+    border-radius: 15px;
+    margin-left: 0.5cm;
+    margin-top: 3.5cm;
+}
+@media screen and (max-width: 1366px) {
+    .topNav {
+        width: 35cm;
+    }
+}
+@media screen and (max-width: 1920px) {
+    .topNav {
+        width: 40cm;
+    }
+}
+@media screen and (max-width: 640px) {
+    .topNav {
+        width: 7cm;
+    }
+}
 
+
+  
